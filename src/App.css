@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.slide {
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0%,100% {
+    transform: translateX(100px);
+  }
+  50%{
+    transform: translateX(-500px);
+  }
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
