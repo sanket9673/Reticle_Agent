@@ -1,4 +1,4 @@
-# Sanket Saas — Real-Time API Caching Simulator & Telemetry Dashboard
+# Reticle Saas — Real-Time API Caching Simulator & Telemetry Dashboard
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -15,7 +15,7 @@ An interactive, responsive SaaS dashboard simulator featuring a custom in-memory
 
 In web development, excessive API requests to database or microservices backends introduce substantial round-trip latency, inflate hosting costs, and degrade the user experience. Implementing smart caching strategies reduces unnecessary data fetching.
 
-**Sanket Saas** features a simulator to demonstrate the performance benefits of a local caching engine:
+**Reticle Saas** features a simulator to demonstrate the performance benefits of a local caching engine:
 
 1. **Custom Caching Engine**: An in-memory key-value caching system (`ResponseCache`) with custom Time-To-Live (TTL) expiration rules (configured to 60s).
 2. **Parallel Endpoint Simulation**: Simultaneously queries 4 mock REST endpoints (`metric_overview`, `traffic_sources`, `conversion_funnel`, `user_events`) simulating network round-trips with randomized database response values.
